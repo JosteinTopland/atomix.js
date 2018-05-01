@@ -721,6 +721,7 @@ function keyPressed() {
                 player.toY = min(level.height - 1, player.toY + steps);
                 break;
             case 32: // SPACEBAR
+	    case 13: // ENTER
                 if (player.selectedAtom == null) {
                     for (i in atoms) {
                         let atom = atoms[i];
