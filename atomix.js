@@ -431,7 +431,7 @@ function setup() {
     noSmooth();
     frameRate(60);
 
-    spriteSheet.image = loadImage('spritesheet.png');
+    spriteSheet.image = loadImage('spritesheet_old.png');
 
     levelAt = 0;
     setLevel();
