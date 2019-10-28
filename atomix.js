@@ -436,9 +436,11 @@ function setup() {
     levelAt = 0;
     setLevel();
 
-    var modPlayer = new Protracker();
+    var modPlayer = new Modplayer();
     modPlayer.load("oriental_blaster.mod");
-    modPlayer.autostart = true;
+    modPlayer.setamigamodel("500");
+    modPlayer.setrepeat(true);
+    modPlayer.setautostart(true);
 }
 
 function setLevel() { 
