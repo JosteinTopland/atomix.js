@@ -493,6 +493,8 @@ function draw() {
 
     if (getAudioContext().state === 'running' && !modPlayer.playing) {
         modPlayer.play();
+    } else {
+        getAudioContext().resume();
     }
 }
 
