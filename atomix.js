@@ -16,7 +16,6 @@ var atoms = [];
 
 var levelAt;
 var timer;
-var modPlayer;
 
 var levels = [{
     name: "Water",
@@ -437,10 +436,9 @@ function setup() {
     levelAt = 0;
     setLevel();
 
-    modPlayer = new Modplayer();
+    var modPlayer = new Protracker();
     modPlayer.load("oriental_blaster.mod");
-    modPlayer.setamigamodel("500");
-    modPlayer.setrepeat(true);
+    modPlayer.autostart = true;
 }
 
 function setLevel() { 
@@ -489,10 +487,6 @@ function draw() {
     } else {
         levelAt = 0;
         setLevel();
-    }
-
-    if (!modPlayer.playing) {
-        modPlayer.play();
     }
 }
 
