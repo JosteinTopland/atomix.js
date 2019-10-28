@@ -440,7 +440,6 @@ function setup() {
     modPlayer.load("oriental_blaster.mod");
     modPlayer.setamigamodel("500");
     modPlayer.setrepeat(true);
-    modPlayer.setautostart(true);
 }
 
 function setLevel() { 
