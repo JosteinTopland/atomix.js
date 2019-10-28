@@ -490,11 +490,12 @@ function draw() {
         levelAt = 0;
         setLevel();
     }
+}
 
-    if (getAudioContext().state === 'running' && !modPlayer.playing) {
-        modPlayer.play();
-    } else {
+function touchStarted() {
+    if (getAudioContext().state !== 'running') {
         getAudioContext().resume();
+        modPlayer.play();
     }
 }
 
