@@ -492,7 +492,7 @@ function draw() {
     }
 }
 
-function touchStarted() {
+function keyPressed() {
     if (getAudioContext().state !== 'running') {
         getAudioContext().resume();
         modPlayer.play();
