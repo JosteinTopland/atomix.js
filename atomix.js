@@ -492,13 +492,6 @@ function draw() {
     }
 }
 
-function keyPressed() {
-    if (getAudioContext().state !== 'running') {
-        getAudioContext().resume();
-        modPlayer.play();
-    }
-}
-
 function drawSolution() {
     let x = 7;
     let y = 110;
@@ -742,6 +735,10 @@ function keyPressed() {
                 }
                 break;
         }
+    }
+    if (getAudioContext().state !== 'running') {
+        getAudioContext().resume();
+        modPlayer.play();
     }
 }
 
